@@ -14,7 +14,6 @@ import numpy as np
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-
 spark = SparkSession \
         .builder \
         .appName("Update zabbix_tb_history_uint") \
