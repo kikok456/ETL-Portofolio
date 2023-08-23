@@ -24,7 +24,6 @@ spark = SparkSession \
         .config("spark.executor.memory", "16g") \
         .config("spark.network.timeout", 60) \
         .config("spark.yarn.executor.memoryOverhead", "7g")\
-        .config("spark.yarn.queue", "root.cdhdesv")\
         .config("spark.sql.legacy.allowCreatingManagedTableUsingNonemptyLocation", "true")\
         .enableHiveSupport() \
         .getOrCreate()
